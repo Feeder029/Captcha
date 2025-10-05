@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Google Captcha API</title>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <title>GOOGLE RECAPTCHA API</title>
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1>Contact Form</h1>
-        <form action="" id="contactForm">
+        <form id="contactForm">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" required>
@@ -23,13 +26,14 @@
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" required></textarea>
             </div>
-            <div class="g-recaptcha"></div>
-            <button type="submit" class="submit-btn">
-                Submit
-            </button>
+            <div class="g-recaptcha" data-sitekey="6LcG7d4rAAAAACJyoZU1W4hYRhUlZ1PKRyDlG8kT"></div>
+            <button type="submit" class="submit-btn">Submit</button>
         </form>
         <div id="messageContainer"></div>
     </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
